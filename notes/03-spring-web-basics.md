@@ -175,4 +175,5 @@ API = HTML이 아니라 JSON 같은 데이터 반환
 
 ## 손글씨 정리
 
-![mvc-template-engine](../images/03-spring-web-basics.jpg)
+![mvc-template-engine](../images/03-spring-web-basics-(1).jpg)
+![mvc-template-engine](../images/03-spring-web-basics-(2).jpg)
