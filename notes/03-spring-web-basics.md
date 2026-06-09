@@ -172,3 +172,7 @@ API = HTML이 아니라 JSON 같은 데이터 반환
 | 정적 컨텐츠       | HTML 파일  | 이미 만들어진 파일을 그대로 반환          |
 | MVC + 템플릿 엔진 | 완성된 HTML | 서버가 데이터를 넣어 HTML 화면을 만들어 반환 |
 | API          | JSON 데이터 | 화면이 아니라 데이터를 반환             |
+
+## 손글씨 정리
+
+![mvc-template-engine](../images/08-mvc-template-engine.jpg)
