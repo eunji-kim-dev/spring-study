@@ -1,2 +1,5 @@
 ![mvc-template-engine](../../images/2-create-member-domain-and-repository-(1).jpg)
 ![mvc-template-engine](../../images/2-create-member-domain-and-repository-(2).jpg)
+![회원 도메인 및 리포지토리 구조](../../images/2-create-member-domain-and-repository-(3).jpg)
+![회원 도메인 및 리포지토리 구조](../../images/2-create-member-domain-and-repository-(4).jpg)
+![회원 도메인 및 리포지토리 구조](../../images/2-create-member-domain-and-repository-(5).jpg)
