@@ -90,3 +90,5 @@ assertThat()
 ```
 
 그래서 테스트 코드에서는 단순 출력보다 `assertThat()`을 사용해 검증하는 것이 좋다.
+
+![회원 리포지토리 테스트 코드 설명](../../images/3-create-member-repository-test-cases-(1).jpg)
