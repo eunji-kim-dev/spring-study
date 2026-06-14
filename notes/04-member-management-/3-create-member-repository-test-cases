@@ -1,0 +1,93 @@
+## 테스트 코드에서 사용한 도구 정리
+
+### JUnit
+
+JUnit은 자바에서 테스트 코드를 실행하기 위해 사용하는 테스트 프레임워크이다.
+
+직접 `main()` 메서드를 실행해서 확인하는 대신,
+테스트 메서드를 만들어두고 JUnit이 자동으로 실행하게 한다.
+
+```java
+import org.junit.jupiter.api.Test;
+```
+
+`@Test`는 이 메서드가 테스트 메서드라는 표시이다.
+
+```java
+@Test
+public void save() {
+    ...
+}
+```
+
+이렇게 `@Test`가 붙어 있으면 JUnit이 해당 메서드를 테스트로 인식하고 실행한다.
+
+```text
+@Test
+→ JUnit이 실행할 테스트 메서드라는 표시
+```
+
+---
+
+### AssertJ
+
+AssertJ는 테스트 결과를 검증할 때 사용하는 라이브러리이다.
+
+```java
+import static org.assertj.core.api.Assertions.*;
+```
+
+이 import를 해두면 `assertThat()`을 바로 사용할 수 있다.
+
+```java
+assertThat(result).isEqualTo(member);
+```
+
+이 코드는 `result`가 `member`와 같은지 확인한다.
+
+```text
+result
+→ 실제 실행 결과
+
+member
+→ 기대한 결과
+
+assertThat(result).isEqualTo(member)
+→ 실제 결과가 기대한 결과와 같은지 검증
+```
+
+결과가 같으면 테스트가 성공하고,
+다르면 테스트가 실패한다.
+
+---
+
+### println과 assertThat의 차이
+
+처음에는 결과를 눈으로 확인하기 위해 `System.out.println()`을 사용할 수 있다.
+
+```java
+System.out.println("result = " + (result == member));
+```
+
+하지만 이 방식은 콘솔에 출력만 할 뿐, 테스트 성공과 실패를 자동으로 판단하지 않는다.
+
+```text
+System.out.println()
+→ 사람이 직접 결과를 눈으로 확인해야 함
+```
+
+반면 `assertThat()`은 테스트 코드가 직접 결과를 비교한다.
+
+```java
+assertThat(result).isEqualTo(member);
+```
+
+```text
+assertThat()
+→ 실제 결과와 기대 결과를 자동 비교
+→ 맞으면 테스트 성공
+→ 다르면 테스트 실패
+```
+
+그래서 테스트 코드에서는 단순 출력보다 `assertThat()`을 사용해 검증하는 것이 좋다.
+
