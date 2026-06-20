@@ -250,3 +250,5 @@ MemoryMemberRepository 타입
 ```
 
 ![회원 리포지토리 테스트 코드 설명](../../images/3-create-member-repository-test-cases-(1).jpg)
+![회원 리포지토리 테스트 코드 설명](../../images/3-create-member-repository-test-cases-(2).jpg)
+![회원 리포지토리 테스트 코드 설명](../../images/3-create-member-repository-test-cases-(3).jpg)
