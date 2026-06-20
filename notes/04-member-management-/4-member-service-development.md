@@ -46,3 +46,6 @@ findMembers()
 findOne()
 → 회원 id로 단일 회원 조회
 ```
+
+![회원 기능 개발 코드 설명](../../images/4-member-service-development-(1).jpg)
+![회원 기능 개발 코드 설명](../../images/4-member-service-development-(2).jpg)
